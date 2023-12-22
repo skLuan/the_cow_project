@@ -25,11 +25,11 @@ function createCamera() {
       case "s" || "S":
         console.log("sisaaa");
         isGoing = !isGoing;
-        isback && !isback;
+        isback? isback = false : undefined;
         break;
         case "w" || "W":
           isback = !isback;
-          isGoing && !isGoing;
+          isGoing ? isGoing = false : undefined;
       break;
       default:
         break;
