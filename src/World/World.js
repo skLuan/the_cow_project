@@ -7,7 +7,7 @@ import {
 } from "./components/lights";
 
 import { createRenderer } from "./systems/renderer";
-// import { Resizer } from "./systems/Resizer.js";
+import { Resizer } from "./systems/Resizer.js";
 import { Loop } from "./systems/Loop";
 
 let camera, renderer, scene, light, loop; // MInimo para que three js funcione
@@ -31,7 +31,7 @@ class World {
     scene.add(cube, basicCube, pointLightOne);
     // scene.add(sphere);
 
-    // const resizer = new Resizer(container, camera, renderer);
+    const resizer = new Resizer(container, camera, renderer);
   }
 
   render() {

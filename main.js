@@ -1,4 +1,5 @@
-import World  from "/src/World/World";
+import './style.css';
+import {World}  from "./src/World/World.js";
 
 function main() {
     const container = document.querySelector(".cowProgram");
